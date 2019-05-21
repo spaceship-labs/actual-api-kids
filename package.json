@@ -1,0 +1,93 @@
+{
+  "name": "actual-api",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "async": "^2.1.4",
+    "axios": "^0.18.0",
+    "aws-sdk": "^2.311.0",
+    "bcrypt": "^0.8.x",
+    "bcrypt-nodejs": "0.0.3",
+    "bignumber.js": "^7.2.1",
+    "bluebird": "^3.4.7",
+    "build-url": "^1.0.9",
+    "connect-mongo": "^1.3.2",
+    "connect-timeout": "^1.8.0",
+    "cron": "^1.2.1",
+    "dinero.js": "^1.4.0",
+    "ejs": "^2.5.1",
+    "express": "3.4.3",
+    "fs": "0.0.2",
+    "gm": "^1.21.1",
+    "imagemagick": "^0.1.3",
+    "include-all": "~0.1.3",
+    "jsonwebtoken": "^5.5.4",
+    "lodash.clonedeep": "^4.5.0",
+    "mime": "^1.3.4",
+    "moment": "^2.14.1",
+    "moment-timezone": "^0.5.9",
+    "mongodb": "^2.2.22",
+    "numeral": "^1.5.3",
+    "object-assign": "^4.1.0",
+    "object-hash": "^1.1.2",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1",
+    "passport-local": "^1.0.0",
+    "pkgcloud": "^1.5.0",
+    "promise-delay": "^2.1.0",
+    "q": "^1.4.1",
+    "qs": "^6.5.2",
+    "querystring": "^0.2.0",
+    "rc": "~0.5.0",
+    "request": "^2.72.0",
+    "request-promise": "^4.1.1",
+    "sails": "0.12.11",
+    "sails-disk": "~0.10.0",
+    "sails-hook-email": "^0.12.1",
+    "sails-mongo": "^0.12.2",
+    "sails-mysql": "^0.11.3",
+    "sails-sqlserver": "^0.10.8",
+    "sendgrid": "^3.0.8",
+    "skipper": "^0.8.0",
+    "skipper-s3": "^0.5.11",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "bcrypt": "^0.8.x",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^3.19.0",
+    "lint-staged": "^6.1.0",
+    "mocha": "^5.0.0",
+    "prettier": "1.9.2",
+    "sails-fixtures": "^1.0.8",
+    "sails-generate-eslintrc": "^1.3.2",
+    "supertest": "^3.0.0"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "debug": "node debug app.js",
+    "start": "node app.js",
+    "test": "NODE_ENV=test node ./node_modules/mocha/bin/mocha test/bootstrap.test.js test/integration/**/*.test.js",
+    "test-invoice": "NODE_ENV=test node ./node_modules/mocha/bin/mocha test/bootstrap.test.js test/integration/services/InvoiceServiceMigration.test.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/luis/actual-api.git"
+  },
+  "author": "luis",
+  "license": "",
+  "engines": {
+    "node": "8.9.4",
+    "npm": "5.6.0"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,json,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
