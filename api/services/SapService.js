@@ -397,35 +397,35 @@ function getSeriesNum(storeId) {
 }
 
 function mapWhsSeries(whsName) {
-  var series = 209;
+  var series = 183;
   switch (whsName) {
     case 'STUDIO MALECON':
-      series = 182;
-      break;
-    case 'STUDIO PLAYA':
       series = 183;
       break;
+    case 'STUDIO PLAYA':
+      series = 186;
+      break;
     case 'STUDIO CUMBRES':
-      series = 185;
+      series = 180;
       break;
     case 'STUDIO CARMEN':
-      series = 181;
+      series = 278;
       break;
     case 'STUDIO MERIDA':
-      series = 184;
+      series = 188;
       break;
-    case 'STUDIO CHETUMAL':
-      series = 186;
-      break;
-    case 'HOME XCARET':
-      series = 209;
-      break;
+    // case 'STUDIO CHETUMAL':
+    //   series = 186;
+    //   break;
+    // case 'HOME XCARET':
+    //   series = 209;
+    //   break;
     case 'HOME PUERTO CANCUN':
-      series = 186;
+      series = 278;
       break;
-    case 'HOME MERIDA':
-      series = 210;
-      break;
+    // case 'HOME MERIDA':
+    //   series = 210;
+    //   break;
     default:
       series = 209;
       break;
