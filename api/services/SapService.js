@@ -400,7 +400,7 @@ function mapWhsSeries(whsName) {
   var series = 209;
   switch (whsName) {
     case 'STUDIO MALECON':
-      series = 182;
+      series = 183;
       break;
     case 'STUDIO PLAYA':
       series = 183;
